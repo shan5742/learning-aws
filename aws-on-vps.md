@@ -16,7 +16,7 @@ If not then install like so:
 
 ```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-sudo apt install unzip
+sudo apt install unzip // unzip package not installed on base ubuntu system
 unzip awscliv2.zip
 sudo ./aws/install
 ```
@@ -32,9 +32,9 @@ aws --version
 Ok now we have aws cli installed let's create file on VPS and move it to the bucket.
 
 ```
-touch random_file
-sudo apt-get install nano
-nano random_file
+touch random_file // create test file
+sudo apt-get install nano // nano not installed on base ubuntu
+nano random_file // add content to est file
 ```
 
 Once file opens in nano just add some text and then run `ls` to make sure file was created properly. If so then move to bucket like so:
